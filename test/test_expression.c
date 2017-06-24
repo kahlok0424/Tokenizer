@@ -4,6 +4,7 @@
 #include "mock_tokenizerstring.h"
 #include "CException.h"
 #include "Exception.h"
+#include <stdio.h>
 
 void setUp(void)
 {
@@ -18,7 +19,7 @@ void test_computeexpression_given_2_plus_3(void)
     int result;
     char *str = "256 + 38";
     TokenizerString tokstr = {str,0};
-    
+    printf("lalala");
     TokenInt firstval = {INTEGER ,256};
     
     tokenizerStringCreate_ExpectAndReturn(str , &tokstr);
@@ -28,3 +29,4 @@ void test_computeexpression_given_2_plus_3(void)
    
    TEST_ASSERT_EQUAL(294,result);
 }
+
