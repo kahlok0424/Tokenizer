@@ -1,0 +1,3 @@
+build/*
+!build/Radme.txt
+!build/Readme.txt
